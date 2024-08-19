@@ -1,17 +1,28 @@
 # Banco App
 
-# Módulo Classes:
+## Módulo Classes:
+ - Exercicios de fixação de POO.
+ 
+### 1. classe ContaBancaria:
 
-## 1. Classe ContaBancaria
+● Defina a classe ContaBancaria
+● Ao instanciar a classe, forneça:
+○ número da conta
+○ nome da pessoa
+○ saldo inicial (em reais)
+○ tipo de conta (corrente, poupança ou investimento)
+● Fornecer três métodos de instância para esta classe
+○ deposito(quantidade) para efetuar o depósito
+○ saque(quantidade) para efetuar o saque
+○ saldo() para obter o saldo da conta
+● Monte um teste em que você realize todas as operações bancárias
 
-### Atributos:
-numCont: Número da conta
-nomePessoa: Nome do titular da conta
-saldo: Saldo da conta
-tipoConta: Tipo de conta
+### 2. classe ContaBancaria(Cont-1):
 
-### Métodos:
+● Permita o rastreamento do número de instâncias criadas da classe
+ContaBancaria
+● Mostre na tela uma mensagem toda vez que uma instância da classe é
+criada
+● Mostre na tela a quantidade de contas criadas
 
-deposito(quantidade): Adiciona uma quantidade ao saldo
-saque(quantidade): Subtrai uma quantidade do saldo, se houver saldo suficiente
-exibir_saldo(): Exibe o saldo atual da conta
+### 3. classe ContaBancaria(Cont-2):
