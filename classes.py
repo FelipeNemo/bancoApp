@@ -40,3 +40,7 @@ P1.saque(2000.0)
 
 # Exibir saldo final
 P1.exibir_saldo()
+
+# Implementar o exercicio de fixação add:contaBancaria(Cont-1) 
+
+# commit aula 19 de agosto
