@@ -7,6 +7,34 @@ class ContaBancaria:
         self.saldo = saldo
         self.tipoConta = tipoConta
 
+    @property
+    def numCont (self):
+        return self.__professor
+    @numCont.setter
+    def numCont(self, numCont):
+        self.__numCont = numCont
+
+    @property
+    def nomePessoa (self):
+        return self.__nomePessoa
+    @nomePessoa.setter
+    def nomePessoa(self, nomePessoa):
+        self.__nomePessoa = nomePessoa
+
+    @property
+    def saldo (self):
+        return self.__saldo
+    @saldo.setter
+    def saldo(self, saldo):
+        self.__nomePessoa = saldo
+
+    @property
+    def tipoConta (self):
+        return self.__tipoConta
+    @tipoConta.setter
+    def tipoConta(self, tipoConta):
+        self.__tipoConta = tipoConta
+
 # 2f indica a formatação em ponto flutuante com duas casas decimais
     def deposito(self, quantidade):
         self.saldo += quantidade
@@ -40,3 +68,23 @@ P1.saque(2000.0)
 
 # Exibir saldo final
 P1.exibir_saldo()
+
+class ContaCorrente(ContaBancaria):
+    def __init__(self,  numCont, nomePessoa, saldo, tipoConta, limite):
+        super().__init__(numCont, nomePessoa, saldo, tipoConta)  # Chama o construtor da classe pai para definir idioma e nivel
+        self.limite = limite
+
+    @property
+    def limite (self):
+        return self.__limite
+    @limite.setter
+    def limite(self, limite):
+        if saldo>=limite:
+            self.__limite = limite
+        else:
+
+
+class ContaPoupanca(ContaBancaria):
+        pass
+class ContaInvestimento(ContaBancaria):
+        pass
